@@ -16,7 +16,7 @@ import java.util.Set;
      * **É necessário ter a biblioteca Gson no classpath do projeto.**
      */
     public class BuscarValor {
-        // Sua chave de API. Por segurança, em projetos reais, não a deixe codificada.
+      //Chave da api
         private static final String API_KEY = "Coloque sua chave aqui";
 
         /**
@@ -42,7 +42,7 @@ import java.util.Set;
                         .send(request, HttpResponse.BodyHandlers.ofString());
 
                 if (response.statusCode() != 200) {
-                    // Se a API retornar um erro HTTP (como 404, 403)
+                    // Se a API retornar um erro HTTP
                     throw new RuntimeException("Erro na API: Status Code " + response.statusCode());
                 }
 
