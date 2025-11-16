@@ -17,7 +17,7 @@ import java.util.Set;
      */
     public class BuscarValor {
         // Sua chave de API. Por segurança, em projetos reais, não a deixe codificada.
-        private static final String API_KEY = "92396d4dbfea6a530029b203";
+        private static final String API_KEY = "Coloque sua chave aqui";
 
         /**
          * Consulta o valor das moedas usando o código da moeda base fornecido.
