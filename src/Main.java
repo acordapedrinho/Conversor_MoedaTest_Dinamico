@@ -1,11 +1,11 @@
-mport java.util.Scanner;
+import java.util.Scanner;
 import java.net.http.HttpClient;
 import java.util.Scanner;
 
 /**
  * Classe principal que contém o menu interativo e a lógica de conversão de moedas.
  */
-public class Conversor {
+public class Main {
     public static void main(String[] args) {
 
         BuscarValor novaConsulta = new BuscarValor();
@@ -22,8 +22,8 @@ public class Conversor {
             System.out.println("3 - BRL --> Libra Esterlina (GBP)");
             System.out.println("4 - BRL --> Iene Japonês (JPY)");
             System.out.println("5 - BRL --> Franco Suíço (CHF)");
-            System.out.println("7 - Conversão Personalizada (Ex: USD para EUR)");
-            System.out.println("6 - Sair");
+            System.out.println("6 - Conversão Personalizada (Ex: USD para EUR)");
+            System.out.println("7 - Sair");
             System.out.println("De acordo com o menu acima, escolha uma opção:");
 
             // Leitura segura do inteiro
@@ -53,10 +53,10 @@ public class Conversor {
                 case 5:
                     realizarConversao(novaConsulta, "BRL", "CHF", scanner);
                     break;
-                case 7:
+                case 6:
                     realizarConversaoPersonalizada(novaConsulta, scanner);
                     break;
-                case 6:
+                case 7:
                     System.out.println("Saindo do programa...");
                     // Fecha o scanner ao sair
                     scanner.close();
@@ -129,6 +129,7 @@ public class Conversor {
     private static void realizarConversaoPersonalizada(BuscarValor consulta, Scanner scanner) {
         System.out.println("\n--- Conversão Personalizada ---");
         System.out.println("Insira o código da MOEDA BASE (código de 3 letras, Ex: USD, EUR, BRL):");
+
         String moedaBase = scanner.nextLine().toUpperCase();
 
         System.out.println("Insira o código da MOEDA DE DESTINO (código de 3 letras, Ex: JPY, GBP, CAD):");

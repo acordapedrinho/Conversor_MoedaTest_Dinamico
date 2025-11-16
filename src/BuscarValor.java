@@ -54,7 +54,7 @@ import java.util.Set;
 
             }catch (Exception e) {
                 // Erro genérico, incluindo problemas no JSON Parsing
-                throw new RuntimeException("Erro desconhecido ao processar dados: " + e.getMessage());
+                throw new RuntimeException("Erro desconhecido ao processar dados: Verifique se Escreveu Corretamente = " + e.getMessage());
             }
         }
 
