@@ -64,7 +64,11 @@ Api.java,Camada de Dados: Define o record Api.ExchangeRateApi para mapear e tipa
 
 ### Conversão Simples (BRL para USD)
 Aqui está a tela mostrando a conversão de 1000 BRL para USD (Opção 1):
-![Captura de tela da conversão de 1000 BRL para USD](images/conversao_brl.png)
+![Captura de tela da conversão de 1000 BRL para USD]<img width="589" height="622" alt="image" src="https://github.com/user-attachments/assets/e53aac88-8cd3-42a5-a531-aaad5c6edce8" />
+)
+
+
+
 
 ---
 
