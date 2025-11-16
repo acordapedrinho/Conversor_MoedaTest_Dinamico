@@ -43,11 +43,11 @@ Use os comandos abaixo no terminal, no diretório raiz do projeto, para compilar
 
 #### Compilação
 
-```bash
-# Para Linux/macOS
+
+## Para Linux/macOS
 javac -cp "lib/*:." *.java 
 
-# Para Windows (use ponto e vírgula)
+## Para Windows (use ponto e vírgula)
 javac -cp "lib/*;." *.java
 
 ##Arquivo,Responsabilidade
@@ -55,8 +55,26 @@ Conversor.java,"Camada de UI: Contém o método main(), o menu interativo e a l�
 BuscaValor.java,"Camada de Serviço: Implementa a requisição HTTP (HttpClient) e o parsing do JSON (Gson), isolando a lógica de comunicação com a API."
 Api.java,Camada de Dados: Define o record Api.ExchangeRateApi para mapear e tipar a resposta da API de forma imutável.
 
-# Para Linux/macOS
-java -cp "lib/*:." Conversor
 
-# Para Windows
-java -cp "lib/*;." Conversor
+#💰 Conversor de Moedas em Java
+
+
+
+## Demonstração de Uso
+
+### Conversão Simples (BRL para USD)
+Aqui está a tela mostrando a conversão de 1000 BRL para USD (Opção 1):
+![Captura de tela da conversão de 1000 BRL para USD](images/conversao_brl.png)
+
+---
+
+
+
+
+
+
+## Conversão Personalizada (USD para CHF)
+É possível realizar conversões entre quaisquer duas moedas usando a opção 6 (Conversão Personalizada):
+
+<img width="625" height="821" alt="image" src="https://github.com/user-attachments/assets/e46bd87e-837b-4738-907d-07775790bb55" />
+
